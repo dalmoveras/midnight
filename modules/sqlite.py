@@ -3,7 +3,10 @@ import sqlite3
 
 
 def createDB():
+    os.mkdir("output")
     con = sqlite3.connect('output/midnight.db')
+    os.chmod("./output/", 0o777)
+    os.chmod("./output/midnight.db", 0o777)
     return con
 
 
