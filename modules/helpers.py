@@ -107,6 +107,7 @@ def rootcheck():
     check = subprocess.run(['whoami'], stdout=subprocess.PIPE)
     check = str(check.stdout.decode("utf-8").replace('\n', '').strip())
     if check != "root":
+        print("You must be root.")
         exit()
     return check
 

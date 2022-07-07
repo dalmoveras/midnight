@@ -9,16 +9,18 @@ def midnight():
     titlePrinter()
     rootcheck()
     masterList = []
+
+    if not os.path.exists("./output/midnight.db"):
+        createDB()
+    midnightCon = connectDB()
+    createTables(midnightCon)
+    torstatus()
+
+    extensions = ('.jpg', 'jpeg', '.mp4', '.png', '.gif')
+    blacklist = ('http://76qugh5bey5gum7l.onion')
     while len(targetList) > 0:
-        if not os.path.exists("../output/midnight.db"):
-            createDB()
-        midnightCon = connectDB()
-        createTables(midnightCon)
         url = random.choice(targetList)
-        torstatus()
-        extensions = ('.jpg', 'jpeg', '.mp4', '.png', '.gif')
         # This is for any site that makes the program hang excessively long
-        blacklist = ('http://76qugh5bey5gum7l.onion')
         if url not in masterList and not url.endswith(extensions) and not url.startswith(blacklist):
             print("New iteration:")
             print("Currently scanning " + url)
