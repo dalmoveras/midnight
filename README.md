@@ -9,10 +9,10 @@
 * tor
 
 ### Installing
-1 - `mkvirtualenv midnight`
-2 - `git clone https://github.com/murksombra/midnight`
-3 - `cd midnight`
-4 - `pip3 install requirements.txt`
+1. `mkvirtualenv midnight`
+2. `git clone https://github.com/murksombra/midnight`
+3. `cd midnight`
+4. `pip3 install requirements.txt`
 
 
 ### Running the scrapper
