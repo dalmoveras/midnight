@@ -16,7 +16,11 @@
 
 
 ### Running the scrapper
-TBD
+You should provide the entry point (domain.onion). If none is provided, midgnight will start from:`http://76qugh5bey5gum7l.onion`.
+Please, keep in mind that .onions are living things and the provided default .onion could not be available in the future.
+
+Run: `python3 midnight <domain.onion>`
 
 ### Running the search
-TBD
+Run: `python3 search.py`
+
