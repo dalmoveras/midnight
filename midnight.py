@@ -7,7 +7,7 @@ import random
 def midnight():
     targetList = inputList()
     titlePrinter()
-    rootcheck()
+    # rootcheck()
     masterList = []
 
     if not os.path.exists("./output/midnight.db"):

@@ -206,7 +206,7 @@ def titlePrinter():
     Created by Sombra                                                         
 	------------------------------------------------------------------------
 	| Start the program with a screen session and log the results:	       |
-	| 	screen -S midnight -L -Logfile output/log/midnight.txt          |
+	| 	screen -S midnight -L -Logfile output/log/midnight.txt         |
 	| Start midnight						       |
 	|	python3 midnight.py					       |
 	| Disconnect from the screen session				       |
